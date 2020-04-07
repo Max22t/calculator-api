@@ -26,6 +26,7 @@ func main() {
 		w.Header().Set("Content-type", "application/json")
 		w.WriteHeader(http.StatusOK)
 		json.NewEncoder(w).Encode(response)
+		log.Println("successfully responded to sum request")
 
 	})
 
