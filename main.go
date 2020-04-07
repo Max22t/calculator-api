@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-	//Toda api precisa de handlers, que são rotas que o servidor vai receber requests e responder com responses http.handleFunc("/sum",func(w http.ResponseWriter,r *http.Request)
+	//Toda api precisa de handlers, que são rotas que o servidor vai receber requests e responder com responses 
+	http.handleFunc("/sum",func(w http.ResponseWriter,r *http.Request)
 	{
 		query := r.URl.Query()
 		n1 := query.Get("n1")
